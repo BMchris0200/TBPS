@@ -603,8 +603,6 @@ def run_and_display(prompts, controller, latent=None, run_baseline=False, genera
 csv_reader = csv.reader(open("/data2/liuzhibin/STM/modified_images_cuhk_all/modified_images_1.csv"))
 
 for idx,row in enumerate(csv_reader):
-    if idx<4933:
-        continue
     prompt,new_prompt = row[0],row[1]
     path,new_path = row[2],row[3]
     phase,new_phase = row[4],row[5]
